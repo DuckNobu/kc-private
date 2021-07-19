@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_99ed1b1f449b458b963140c0ff68c8d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_99ed1b1f449b458b963140c0ff68c8d0" ></div>
+        
+</body>
+<script>    
+    
+            var map_99ed1b1f449b458b963140c0ff68c8d0 = L.map(
+                "map_99ed1b1f449b458b963140c0ff68c8d0",
+                {
+                    center: [5.4164, 100.3327],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39c7cf6d8f6b479eb1688088a737281c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+            var circle_marker_8373248c77ea43be8019105c18c28331 = L.circleMarker(
+                [5.3519, 100.2359],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+            var marker_fa3ff095d4ff4f9bba11278b9bbb1cae = L.marker(
+                [5.3519, 100.2359],
+                {}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+        var custom_icon_e53e5e97ac2a49d7ac334eb77c9f7b5d = L.icon({"iconSize": [100, 100], "iconUrl": "https://static.wikia.nocookie.net/fategrandorder/images/9/98/Nobu_tank.png"});
+        marker_fa3ff095d4ff4f9bba11278b9bbb1cae.setIcon(custom_icon_e53e5e97ac2a49d7ac334eb77c9f7b5d);
+        
+    
+        var popup_04448cf3ebe04c9093fb60c574328c39 = L.popup({"maxWidth": 200});
+
+        
+            var html_94ccaacc3edf4f3f9264180800726042 = $(`<div id="html_94ccaacc3edf4f3f9264180800726042" style="width: 100.0%; height: 100.0%;"><strong><b>Date  : 2021-05-06</strong> <br><strong><b>District  : Barat Daya</strong> <br><strong><b><font color=red>New Cases : +19</font></striong><br><strong><b><font color=yellow>Active Cases : 294</font></striong><br><strong><b>Total Cases : 5677 (+19)</striong></div>`)[0];
+            popup_04448cf3ebe04c9093fb60c574328c39.setContent(html_94ccaacc3edf4f3f9264180800726042);
+        
+
+        marker_fa3ff095d4ff4f9bba11278b9bbb1cae.bindPopup(popup_04448cf3ebe04c9093fb60c574328c39)
+        ;
+
+        
+    
+    
+            var circle_marker_60b8850da8a046b99f882282161dc6ad = L.circleMarker(
+                [5.4142, 100.3285],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+            var marker_3600f0135a0747af8f7851dadee4558a = L.marker(
+                [5.4142, 100.3285],
+                {}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+        var custom_icon_c63c27f24f0c47beaf594259faa2850c = L.icon({"iconSize": [100, 100], "iconUrl": "https://static.wikia.nocookie.net/fategrandorder/images/9/98/Nobu_tank.png"});
+        marker_3600f0135a0747af8f7851dadee4558a.setIcon(custom_icon_c63c27f24f0c47beaf594259faa2850c);
+        
+    
+        var popup_29ee0360df1f4978820cee37d71c7fe5 = L.popup({"maxWidth": 200});
+
+        
+            var html_488e97a3207e4c678a2f84d316b32f03 = $(`<div id="html_488e97a3207e4c678a2f84d316b32f03" style="width: 100.0%; height: 100.0%;"><strong><b>Date  : 2021-05-06</strong> <br><strong><b>District  : Timur Laut</strong> <br><strong><b><font color=red>New Cases : +96</font></striong><br><strong><b><font color=yellow>Active Cases : 650</font></striong><br><strong><b>Total Cases : 5286 (+96)</striong></div>`)[0];
+            popup_29ee0360df1f4978820cee37d71c7fe5.setContent(html_488e97a3207e4c678a2f84d316b32f03);
+        
+
+        marker_3600f0135a0747af8f7851dadee4558a.bindPopup(popup_29ee0360df1f4978820cee37d71c7fe5)
+        ;
+
+        
+    
+    
+            var circle_marker_0134e7c40779469dbf272ea465fe78ac = L.circleMarker(
+                [5.3535, 100.4518],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+            var marker_00de81ee549b4574ad47f621d96b90f0 = L.marker(
+                [5.3535, 100.4518],
+                {}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+        var custom_icon_e6ea0ebec1e84746a5e6319953d8adcd = L.icon({"iconSize": [100, 100], "iconUrl": "https://static.wikia.nocookie.net/fategrandorder/images/9/98/Nobu_tank.png"});
+        marker_00de81ee549b4574ad47f621d96b90f0.setIcon(custom_icon_e6ea0ebec1e84746a5e6319953d8adcd);
+        
+    
+        var popup_715f4d89e8a14ac684183ce58614ab1f = L.popup({"maxWidth": 200});
+
+        
+            var html_802f20737e734ddb81e88edd5aae1425 = $(`<div id="html_802f20737e734ddb81e88edd5aae1425" style="width: 100.0%; height: 100.0%;"><strong><b>Date  : 2021-05-06</strong> <br><strong><b>District  : Seberang Perai Tengah</strong> <br><strong><b><font color=red>New Cases : +25</font></striong><br><strong><b><font color=yellow>Active Cases : 584</font></striong><br><strong><b>Total Cases : 4531 (+25)</striong></div>`)[0];
+            popup_715f4d89e8a14ac684183ce58614ab1f.setContent(html_802f20737e734ddb81e88edd5aae1425);
+        
+
+        marker_00de81ee549b4574ad47f621d96b90f0.bindPopup(popup_715f4d89e8a14ac684183ce58614ab1f)
+        ;
+
+        
+    
+    
+            var circle_marker_6098e2e559b449b8adc3a5b98418ddb6 = L.circleMarker(
+                [5.1958, 100.4921],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+            var marker_4014a6abd8c54922aae59ab92ffef63e = L.marker(
+                [5.1958, 100.4921],
+                {}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+        var custom_icon_d46343ad379c4aa6b92cb46406a1dedf = L.icon({"iconSize": [100, 100], "iconUrl": "https://static.wikia.nocookie.net/fategrandorder/images/9/98/Nobu_tank.png"});
+        marker_4014a6abd8c54922aae59ab92ffef63e.setIcon(custom_icon_d46343ad379c4aa6b92cb46406a1dedf);
+        
+    
+        var popup_71b223c371d64879b20a07a06b399682 = L.popup({"maxWidth": 200});
+
+        
+            var html_0d6e2d55b2394b8285d78a83da906a34 = $(`<div id="html_0d6e2d55b2394b8285d78a83da906a34" style="width: 100.0%; height: 100.0%;"><strong><b>Date  : 2021-05-06</strong> <br><strong><b>District  : Seberang Perai Selatan</strong> <br><strong><b><font color=red>New Cases : +21</font></striong><br><strong><b><font color=yellow>Active Cases : 279</font></striong><br><strong><b>Total Cases : 3253 (+21)</striong></div>`)[0];
+            popup_71b223c371d64879b20a07a06b399682.setContent(html_0d6e2d55b2394b8285d78a83da906a34);
+        
+
+        marker_4014a6abd8c54922aae59ab92ffef63e.bindPopup(popup_71b223c371d64879b20a07a06b399682)
+        ;
+
+        
+    
+    
+            var circle_marker_5f0fd7d0a3024daebfc6fed58057db50 = L.circleMarker(
+                [5.5148, 100.4355],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+            var marker_a5e275a4024446d7b51bbb753abfdc2a = L.marker(
+                [5.5148, 100.4355],
+                {}
+            ).addTo(map_99ed1b1f449b458b963140c0ff68c8d0);
+        
+    
+        var custom_icon_27b0d75f2f4d436cbdb5793b8d48a8f3 = L.icon({"iconSize": [100, 100], "iconUrl": "https://static.wikia.nocookie.net/fategrandorder/images/9/98/Nobu_tank.png"});
+        marker_a5e275a4024446d7b51bbb753abfdc2a.setIcon(custom_icon_27b0d75f2f4d436cbdb5793b8d48a8f3);
+        
+    
+        var popup_13d1970cff704c12967183a54c434658 = L.popup({"maxWidth": 200});
+
+        
+            var html_0369f7a36f9347759ae63595cde8e694 = $(`<div id="html_0369f7a36f9347759ae63595cde8e694" style="width: 100.0%; height: 100.0%;"><strong><b>Date  : 2021-05-06</strong> <br><strong><b>District  : Seberang Perai Utara</strong> <br><strong><b><font color=red>New Cases : +34</font></striong><br><strong><b><font color=yellow>Active Cases : 323</font></striong><br><strong><b>Total Cases : 1893 (+34)</striong></div>`)[0];
+            popup_13d1970cff704c12967183a54c434658.setContent(html_0369f7a36f9347759ae63595cde8e694);
+        
+
+        marker_a5e275a4024446d7b51bbb753abfdc2a.bindPopup(popup_13d1970cff704c12967183a54c434658)
+        ;
+
+        
+    
+</script>
